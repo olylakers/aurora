@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="auroraService" class="org.aurora.netty.service.AuroraServiceImpl">
+		<property name="eventDispacher" ref="eventDispacher" />
+		<property name="logAsynWriter" ref="logAsynWriter" />		
+	</bean>
+	<bean id="eventDispacher" class="org.aurora.netty.handler.EventDispacher">
+		<property name="logAsynWriter" ref="logAsynWriter" />
+		<property name="channelLogWriter" ref="channelLogWriter" />
+	</bean>
+	<bean id="logAsynWriter" class="org.aurora.log.LogAsynWriter" init-method="init">
+		<property name="logName" value="org.aurora.channel.log" />
+	</bean>
+	
+	<bean id="messageLog" class="org.aurora.log.LogAsynWriter" init-method="init">
+		<property name="logName" value="org.aurora.message.log" />
+	</bean>
+	<bean id="heartbeatLog" class="org.aurora.log.LogAsynWriter" init-method="init">
+		<property name="logName" value="org.aurora.heartbeat.log" />
+	</bean>
+	<bean id="channelLogWriter" class="org.aurora.log.LogAsynWriter" init-method="init">
+		<property name="logName" value="org.aurora.channel.log" />
+	</bean>
+</beans>

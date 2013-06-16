@@ -1,0 +1,95 @@
+2013-06-13 17:01:54,978 DEBUG [core.env.StandardEnvironment:114] - Initializing new StandardEnvironment
+2013-06-13 17:01:54,985 DEBUG [core.env.StandardEnvironment:103] - Adding [systemProperties] PropertySource with lowest search precedence
+2013-06-13 17:01:54,989 DEBUG [core.env.StandardEnvironment:103] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-06-13 17:01:54,989 DEBUG [core.env.StandardEnvironment:120] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-06-13 17:01:54,994 INFO [context.support.ClassPathXmlApplicationContext:495] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77fddc31: startup date [Thu Jun 13 17:01:54 CST 2013]; root of context hierarchy
+2013-06-13 17:01:55,036 DEBUG [core.env.StandardEnvironment:114] - Initializing new StandardEnvironment
+2013-06-13 17:01:55,036 DEBUG [core.env.StandardEnvironment:103] - Adding [systemProperties] PropertySource with lowest search precedence
+2013-06-13 17:01:55,036 DEBUG [core.env.StandardEnvironment:103] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-06-13 17:01:55,036 DEBUG [core.env.StandardEnvironment:120] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-06-13 17:01:55,037 DEBUG [core.env.StandardEnvironment:114] - Initializing new StandardEnvironment
+2013-06-13 17:01:55,037 DEBUG [core.env.StandardEnvironment:103] - Adding [systemProperties] PropertySource with lowest search precedence
+2013-06-13 17:01:55,038 DEBUG [core.env.StandardEnvironment:103] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-06-13 17:01:55,038 DEBUG [core.env.StandardEnvironment:120] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-06-13 17:01:55,049 INFO [factory.xml.XmlBeanDefinitionReader:315] - Loading XML bean definitions from class path resource [application-context.xml]
+2013-06-13 17:01:55,051 DEBUG [factory.xml.DefaultDocumentLoader:72] - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2013-06-13 17:01:55,071 DEBUG [factory.xml.BeansDtdResolver:73] - Found beans DTD [http://www.springframework.org/dtd/spring-beans.dtd] in classpath: spring-beans.dtd
+2013-06-13 17:01:55,092 DEBUG [factory.xml.DefaultBeanDefinitionDocumentReader:108] - Loading bean definitions
+2013-06-13 17:01:55,121 DEBUG [factory.xml.XmlBeanDefinitionReader:216] - Loaded 3 bean definitions from location pattern [application-context.xml]
+2013-06-13 17:01:55,121 DEBUG [context.support.ClassPathXmlApplicationContext:525] - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@77fddc31: org.springframework.beans.factory.support.DefaultListableBeanFactory@30384065: defining beans [auroraService,eventDispacher,logAsynWriter]; root of factory hierarchy
+2013-06-13 17:01:55,145 DEBUG [context.support.ClassPathXmlApplicationContext:794] - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@d0721b0]
+2013-06-13 17:01:55,148 DEBUG [context.support.ClassPathXmlApplicationContext:818] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3bc0f2e5]
+2013-06-13 17:01:55,148 INFO [factory.support.DefaultListableBeanFactory:557] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@30384065: defining beans [auroraService,eventDispacher,logAsynWriter]; root of factory hierarchy
+2013-06-13 17:01:55,149 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'auroraService'
+2013-06-13 17:01:55,149 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'auroraService'
+2013-06-13 17:01:55,167 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'auroraService' to allow for resolving potential circular references
+2013-06-13 17:01:55,177 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'eventDispacher'
+2013-06-13 17:01:55,177 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'eventDispacher'
+2013-06-13 17:01:55,179 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'eventDispacher' to allow for resolving potential circular references
+2013-06-13 17:01:55,179 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'logAsynWriter'
+2013-06-13 17:01:55,180 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'logAsynWriter'
+2013-06-13 17:01:55,180 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'logAsynWriter' to allow for resolving potential circular references
+2013-06-13 17:01:55,193 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'logAsynWriter'
+2013-06-13 17:01:55,207 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'eventDispacher'
+2013-06-13 17:01:55,213 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'logAsynWriter'
+2013-06-13 17:01:55,213 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'auroraService'
+2013-06-13 17:01:55,214 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'eventDispacher'
+2013-06-13 17:01:55,214 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'logAsynWriter'
+2013-06-13 17:01:55,215 DEBUG [context.support.ClassPathXmlApplicationContext:845] - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@49bdc9d8]
+2013-06-13 17:01:55,215 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'lifecycleProcessor'
+2013-06-13 17:01:55,216 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'auroraService'
+2013-06-13 17:01:55,216 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'logAsynWriter'
+2013-06-13 17:01:55,224 WARN [netty.service.AuroraServiceImpl:125] - start success
+2013-06-13 17:01:55,281 WARN [netty.service.NettyAuroraAcceptor:124] - netty server start
+2013-06-13 17:01:55,282 WARN [netty.service.NettyAuroraAcceptor:148] - receive push event netty server start
+2013-06-13 17:47:09,267 DEBUG [core.env.StandardEnvironment:114] - Initializing new StandardEnvironment
+2013-06-13 17:47:09,275 DEBUG [core.env.StandardEnvironment:103] - Adding [systemProperties] PropertySource with lowest search precedence
+2013-06-13 17:47:09,277 DEBUG [core.env.StandardEnvironment:103] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-06-13 17:47:09,277 DEBUG [core.env.StandardEnvironment:120] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-06-13 17:47:09,282 INFO [context.support.ClassPathXmlApplicationContext:495] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@ed0220c: startup date [Thu Jun 13 17:47:09 CST 2013]; root of context hierarchy
+2013-06-13 17:47:09,331 DEBUG [core.env.StandardEnvironment:114] - Initializing new StandardEnvironment
+2013-06-13 17:47:09,332 DEBUG [core.env.StandardEnvironment:103] - Adding [systemProperties] PropertySource with lowest search precedence
+2013-06-13 17:47:09,332 DEBUG [core.env.StandardEnvironment:103] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-06-13 17:47:09,332 DEBUG [core.env.StandardEnvironment:120] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-06-13 17:47:09,333 DEBUG [core.env.StandardEnvironment:114] - Initializing new StandardEnvironment
+2013-06-13 17:47:09,333 DEBUG [core.env.StandardEnvironment:103] - Adding [systemProperties] PropertySource with lowest search precedence
+2013-06-13 17:47:09,334 DEBUG [core.env.StandardEnvironment:103] - Adding [systemEnvironment] PropertySource with lowest search precedence
+2013-06-13 17:47:09,334 DEBUG [core.env.StandardEnvironment:120] - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2013-06-13 17:47:09,349 INFO [factory.xml.XmlBeanDefinitionReader:315] - Loading XML bean definitions from class path resource [application-context.xml]
+2013-06-13 17:47:09,351 DEBUG [factory.xml.DefaultDocumentLoader:72] - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2013-06-13 17:47:09,375 DEBUG [factory.xml.BeansDtdResolver:73] - Found beans DTD [http://www.springframework.org/dtd/spring-beans.dtd] in classpath: spring-beans.dtd
+2013-06-13 17:47:09,402 DEBUG [factory.xml.DefaultBeanDefinitionDocumentReader:108] - Loading bean definitions
+2013-06-13 17:47:09,429 DEBUG [factory.xml.XmlBeanDefinitionReader:216] - Loaded 4 bean definitions from location pattern [application-context.xml]
+2013-06-13 17:47:09,430 DEBUG [context.support.ClassPathXmlApplicationContext:525] - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@ed0220c: org.springframework.beans.factory.support.DefaultListableBeanFactory@799e11a1: defining beans [auroraService,eventDispacher,logAsynWriter,messageLog]; root of factory hierarchy
+2013-06-13 17:47:09,466 DEBUG [context.support.ClassPathXmlApplicationContext:794] - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3c6833f2]
+2013-06-13 17:47:09,471 DEBUG [context.support.ClassPathXmlApplicationContext:818] - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@1cad157f]
+2013-06-13 17:47:09,472 INFO [factory.support.DefaultListableBeanFactory:557] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@799e11a1: defining beans [auroraService,eventDispacher,logAsynWriter,messageLog]; root of factory hierarchy
+2013-06-13 17:47:09,473 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'auroraService'
+2013-06-13 17:47:09,474 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'auroraService'
+2013-06-13 17:47:09,498 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'auroraService' to allow for resolving potential circular references
+2013-06-13 17:47:09,507 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'eventDispacher'
+2013-06-13 17:47:09,508 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'eventDispacher'
+2013-06-13 17:47:09,511 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'eventDispacher' to allow for resolving potential circular references
+2013-06-13 17:47:09,512 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'logAsynWriter'
+2013-06-13 17:47:09,512 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'logAsynWriter'
+2013-06-13 17:47:09,512 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'logAsynWriter' to allow for resolving potential circular references
+2013-06-13 17:47:09,531 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'logAsynWriter'
+2013-06-13 17:47:09,548 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'eventDispacher'
+2013-06-13 17:47:09,557 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'logAsynWriter'
+2013-06-13 17:47:09,557 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'auroraService'
+2013-06-13 17:47:09,557 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'eventDispacher'
+2013-06-13 17:47:09,557 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'logAsynWriter'
+2013-06-13 17:47:09,558 DEBUG [factory.support.DefaultListableBeanFactory:217] - Creating shared instance of singleton bean 'messageLog'
+2013-06-13 17:47:09,558 DEBUG [factory.support.DefaultListableBeanFactory:430] - Creating instance of bean 'messageLog'
+2013-06-13 17:47:09,558 DEBUG [factory.support.DefaultListableBeanFactory:504] - Eagerly caching bean 'messageLog' to allow for resolving potential circular references
+2013-06-13 17:47:09,558 DEBUG [factory.support.DefaultListableBeanFactory:458] - Finished creating instance of bean 'messageLog'
+2013-06-13 17:47:09,559 DEBUG [context.support.ClassPathXmlApplicationContext:845] - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@773829d5]
+2013-06-13 17:47:09,560 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'lifecycleProcessor'
+2013-06-13 17:47:09,560 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'auroraService'
+2013-06-13 17:47:09,561 DEBUG [factory.support.DefaultListableBeanFactory:245] - Returning cached instance of singleton bean 'logAsynWriter'
+2013-06-13 17:47:09,572 WARN [netty.service.AuroraServiceImpl:125] - start success
+2013-06-13 17:47:09,640 WARN [netty.service.NettyAuroraAcceptor:125] - netty server start
+2013-06-13 17:47:09,642 WARN [netty.service.NettyAuroraAcceptor:150] - receive push event netty server start
+2013-06-13 17:47:19,809 INFO [xbox.asynlog.AsynWriter:92] - AsynWriterConfig :com.taobao.top.xbox.asynlog.LogConfig@3a0b2c64
+2013-06-13 17:47:24,812 INFO [xbox.asynlog.WriteSchedule:21] - WriteSchedule is called! size: 1
+2013-06-13 17:48:36,409 ERROR [netty.handler.DispachUpEventHandler:64] - channel has been close by the exception: java.lang.NullPointerException

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE log4j:configuration SYSTEM "http://toolkit.alibaba-inc.com/dtd/log4j/log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="project" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="/Users/hantong/logs/aurora/aurora.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d %p [%c{3}:%L] - %m%n" />
+		</layout>
+	</appender>
+
+	<!-- notify receive log ,notify send log,api query, -->
+	<appender name="auroraChannelLog" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="/Users/hantong/logs/aurora/channel.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+	
+	<!-- notify receive log ,notify send log,api query, -->
+	<appender name="messageLog" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="/Users/hantong/logs/aurora/message.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="exceptionLog" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="/Users/hantong/logs/aurora/exception.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+		
+	<appender name="heartbeatLog" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="file" value="/Users/hantong/logs/aurora/heartbeat.log" />
+		<param name="append" value="true" />
+		<param name="encoding" value="UTF-8" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>	
+	
+	<logger name="org.aurora.channel.log" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="auroraChannelLog" />
+	</logger>
+	
+	<logger name="org.aurora.message.log" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="messageLog" />
+	</logger>
+	
+	<logger name="org.aurora.exception.log" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="exceptionLog" />
+	</logger>
+	
+	<logger name="org.aurora.heartbeat.log" additivity="false">
+		<level value="warn" />
+		<appender-ref ref="heartbeatLog" />
+	</logger>
+
+	<root>
+		<priority value="${tpn.logging.level}" />
+		<appender-ref ref="project" />
+	</root>
+</log4j:configuration>
